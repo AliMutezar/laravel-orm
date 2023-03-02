@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LandingPageController;
+use App\Http\Controllers\OrmController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,6 @@ Route::get('players', [LandingPageController::class, 'players'])->name('landing.
 Route::get('managers', [LandingPageController::class, 'managers'])->name('landing.managers');
 Route::get('stadiums', [LandingPageController::class, 'stadiums'])->name('landing.stadiums');
 Route::resource('/', LandingPageController::class);
+
+// Many to Many
+Route::get('mtom', [OrmController::class, 'index']);

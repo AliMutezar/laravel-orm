@@ -21,6 +21,9 @@ class DatabaseSeeder extends Seeder
             ManagersTableSeeder::class,
             MatchesTableSeeder::class,
             PlayersTableSeeder::class,
+            RolesTableSeeder::class,
+            UsersTableSeeder::class,
+            RoleUserTableSeeder::class,
         ]);
     }
 }
